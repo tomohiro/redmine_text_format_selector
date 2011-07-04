@@ -1,0 +1,7 @@
+= Redmine Text Format Selector
+
+Add Text format selector to project
+
+== LICENSE
+
+See LICENSE
