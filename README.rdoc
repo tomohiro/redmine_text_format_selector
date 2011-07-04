@@ -2,6 +2,10 @@
 
 Add Text format selector to project
 
+== Getting the plugin
+
+A copy of the plugin can be downloaded from {GitHub}[http://github.com/Tomohiro/redmine_text_format_selector/tree/master]
+
 == LICENSE
 
-See LICENSE
+his plugin is licensed under the MAHALO License.  See LICENSE for details.
