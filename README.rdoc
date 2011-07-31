@@ -8,4 +8,4 @@ A copy of the plugin can be downloaded from {GitHub}[http://github.com/Tomohiro/
 
 == LICENSE
 
-his plugin is licensed under the MAHALO License.  See LICENSE for details.
+This plugin is licensed under the MAHALO License.  See LICENSE for details.
