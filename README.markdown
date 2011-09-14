@@ -13,7 +13,7 @@ Add Text format selector to project
 Getting the plugin
 --------------------------------------------------------------------------------
 
-A copy of the plugin can be downloaded from {GitHub}[http://github.com/Tomohiro/redmine_text_format_selector/tree/master]
+A copy of the plugin can be downloaded from [GitHub](http://github.com/Tomohiro/redmine_text_format_selector/tree/master)
 
 
 Image
