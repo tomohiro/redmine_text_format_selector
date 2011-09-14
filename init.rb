@@ -8,9 +8,9 @@ end
 
 Redmine::Plugin.register :redmine_text_format_selector do
   name 'Redmine Text Format Selector plugin'
-  author 'Tomohiro'
+  author 'Tomohiro, TAIRA'
   description 'Add text format selector to project'
-  version '0.0.1'
+  version '0.0.2'
   url 'http://github.com/Tomohiro/redmine_text_format_selector'
   author_url 'http://github.com/Tomohiro'
 end

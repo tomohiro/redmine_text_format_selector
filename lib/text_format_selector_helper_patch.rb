@@ -50,10 +50,9 @@ module TextFormatSelectorHelperPatch
 
     def project_formatter(project)
       return Setting.text_formatting unless project
-      project.custom_field_values.each do |v|
-        return v.value if Redmine::WikiFormatting.format_names.include? v.value
+      project.custom_field_values.find(lambda { Setting.text_formatting }) do |v|
+        Redmine::WikiFormatting.format_names.include? v.value
       end
-      Setting.text_formatting
     end
   end
 end
