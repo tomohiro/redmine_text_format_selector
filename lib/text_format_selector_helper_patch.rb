@@ -32,11 +32,12 @@ module TextFormatSelectorHelperPatch
       project = options[:project] || @project || (obj && obj.respond_to?(:project) ? obj.project : nil)
       only_path = options.delete(:only_path) == false ? false : true
 
-      text = Redmine::WikiFormatting.to_html(project_formatter(project), text, :object => obj, :attribute => attr) { |macro, args| exec_macro(macro, obj, args) }
+      text = Redmine::WikiFormatting.to_html(project_formatter(project), text, :object => obj, :attribute => attr)
 
       @parsed_headings = []
+      @current_section = 0 if options[:edit_section_links]
       text = parse_non_pre_blocks(text) do |text|
-        [:parse_inline_attachments, :parse_wiki_links, :parse_redmine_links, :parse_headings].each do |method_name|
+        [:parse_sections, :parse_inline_attachments, :parse_wiki_links, :parse_redmine_links, :parse_macros, :parse_headings].each do |method_name|
           send method_name, text, project, obj, attr, only_path, options
         end
       end
