@@ -25,5 +25,6 @@ Image
 LICENSE
 --------------------------------------------------------------------------------
 
-This project is dual licensed under the MAHALO license or GPL Version 2 licenses.
+&copy; 2012 Tomohiro, TAIRA.
+This project is licensed under the MIT license.
 See LICENSE for details.
