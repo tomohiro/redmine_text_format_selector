@@ -1,4 +1,4 @@
-Redmine Text Format Selector [![Still Maintained](http://stillmaintained.com/Tomohiro/redmine_text_format_selector.png)](http://stillmaintained.com/Tomohiro/redmine_text_format_selector)
+Redmine Text Format Selector
 ================================================================================
 
 
@@ -21,6 +21,14 @@ Image
 
 ![Select text format](http://f.cl.ly/items/2a1E3H1e1J1S1E42412T/redmine_text_format_selector_image.png)
 
+
+Author
+-------------------------------------------------------------------------------
+
+[@Tomohiro, TAIRA](http://twitter.com/Tomohiro)
+
+
+---
 
 LICENSE
 --------------------------------------------------------------------------------
