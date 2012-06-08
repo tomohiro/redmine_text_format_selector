@@ -1,7 +1,6 @@
 require 'redmine'
-require 'dispatcher'
 
-Dispatcher.to_prepare :redmine_text_format_selector do
+Rails.configuration.to_prepare do
   require_dependency 'application_helper'
   ApplicationHelper.send(:include, TextFormatSelectorHelperPatch)
 end
