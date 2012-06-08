@@ -15,6 +15,7 @@ module TextFormatSelectorHelperPatch
       return self
     end
 
+    # Monkey patch to ApplicationHelper::textilizable
     def textilizable_with_text_format_select(*args)
       options = args.last.is_a?(Hash) ? args.pop : {}
       case args.size
@@ -35,18 +36,22 @@ module TextFormatSelectorHelperPatch
       text = Redmine::WikiFormatting.to_html(project_formatter(project), text, :object => obj, :attribute => attr)
 
       @parsed_headings = []
+      @heading_anchors = {}
       @current_section = 0 if options[:edit_section_links]
+
+      parse_sections(text, project, obj, attr, only_path, options)
       text = parse_non_pre_blocks(text) do |text|
-        [:parse_sections, :parse_inline_attachments, :parse_wiki_links, :parse_redmine_links, :parse_macros, :parse_headings].each do |method_name|
+        [:parse_inline_attachments, :parse_wiki_links, :parse_redmine_links, :parse_macros].each do |method_name|
           send method_name, text, project, obj, attr, only_path, options
         end
       end
+      parse_headings(text, project, obj, attr, only_path, options)
 
       if @parsed_headings.any?
         replace_toc(text, @parsed_headings)
       end
 
-      text
+      text.html_safe
     end
 
     def project_formatter(project)
