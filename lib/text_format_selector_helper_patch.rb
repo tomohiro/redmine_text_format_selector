@@ -9,6 +9,7 @@ module TextFormatSelectorHelperPatch
   end
 
   module InstanceMethods
+    # Monkey patch to ApplicationHelper::wiki_helper
     def wiki_helper_with_text_format_select
       helper = Redmine::WikiFormatting.helper_for(project_formatter(@project))
       extend helper
@@ -33,6 +34,8 @@ module TextFormatSelectorHelperPatch
       project = options[:project] || @project || (obj && obj.respond_to?(:project) ? obj.project : nil)
       only_path = options.delete(:only_path) == false ? false : true
 
+      text = text.dup
+      macros = catch_macros(text)
       text = Redmine::WikiFormatting.to_html(project_formatter(project), text, :object => obj, :attribute => attr)
 
       @parsed_headings = []
@@ -40,8 +43,8 @@ module TextFormatSelectorHelperPatch
       @current_section = 0 if options[:edit_section_links]
 
       parse_sections(text, project, obj, attr, only_path, options)
-      text = parse_non_pre_blocks(text) do |text|
-        [:parse_inline_attachments, :parse_wiki_links, :parse_redmine_links, :parse_macros].each do |method_name|
+      text = parse_non_pre_blocks(text, obj, macros) do |text|
+        [:parse_inline_attachments, :parse_wiki_links, :parse_redmine_links].each do |method_name|
           send method_name, text, project, obj, attr, only_path, options
         end
       end
