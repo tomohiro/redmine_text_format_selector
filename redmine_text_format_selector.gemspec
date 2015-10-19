@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = [""]
   spec.email         = [""]
 
-  spec.summary       = %q{}
-  spec.description   = %q{}
-  spec.homepage      = ""
+  spec.summary       = %q{Add Text format selector to project}
+  spec.description   = %q{Add Text format selector to project}
+  spec.homepage      = "https://github.com/Tomohiro/redmine_text_format_selector"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
