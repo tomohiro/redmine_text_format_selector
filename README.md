@@ -10,6 +10,14 @@ Getting the plugin
 A copy of the plugin can be downloaded from [GitHub](https://github.com/Tomohiro/redmine_text_format_selector/tree/master)
 
 
+Installation
+--------------------------------------------------------------------------------
+
+- Add the gem to `$REDMINE_DIR/Gemfile.local`: `gem 'redmine_text_format_selector', github: 'Tomohiro/redmine_text_format_selector'`
+- `bundle`
+- Restart your Redmine
+
+
 Image
 --------------------------------------------------------------------------------
 
