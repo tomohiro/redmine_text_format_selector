@@ -1,21 +1,19 @@
 Redmine Text Format Selector
 ================================================================================
 
-Add Text format selector to project
-
-
-Getting the plugin
---------------------------------------------------------------------------------
-
-A copy of the plugin can be downloaded from [GitHub](https://github.com/Tomohiro/redmine_text_format_selector/tree/master)
+This is a redmin plugin that adds text format selector to a specified project.
 
 
 Installation
 --------------------------------------------------------------------------------
 
-- Add the gem to `$REDMINE_DIR/Gemfile.local`: `gem 'redmine_text_format_selector', github: 'Tomohiro/redmine_text_format_selector'`
-- `bundle`
-- Restart your Redmine
+Add the gem to `$REDMINE_DIR/Gemfile.local`:
+
+```ruby
+gem 'redmine_text_format_selector', github: 'Tomohiro/redmine_text_format_selector'
+```
+
+Run `bundle` and then restart your Redmine.
 
 
 Image
@@ -27,5 +25,6 @@ Image
 LICENSE
 --------------------------------------------------------------------------------
 
-&copy; 2014 Tomohiro TAIRA.
+&copy; 2014 - 2015 Tomohiro TAIRA.
+
 This project is licensed under the [GNU General Public License v2](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
