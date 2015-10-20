@@ -1,6 +1,8 @@
 Redmine Text Format Selector
 ================================================================================
 
+[GitHub Tag](https://img.shields.io/github/tag/Tomohiro/redmine_text_format_selector.svg)
+
 This is a redmin plugin that adds text format selector to a specified project.
 
 
@@ -16,10 +18,19 @@ gem 'redmine_text_format_selector', github: 'Tomohiro/redmine_text_format_select
 Run `bundle` and then restart your Redmine.
 
 
-Image
+Usage
 --------------------------------------------------------------------------------
 
-![Select text format](http://f.cl.ly/items/2a1E3H1e1J1S1E42412T/redmine_text_format_selector_image.png)
+Create a custome field to projects.
+
+### Custom field configuration
+
+Item            | Value
+--------------- | --------------------------------------------------------------
+Format          | List
+Name            | Text Format
+Possible Values | textile
+                | markdown
 
 
 LICENSE
