@@ -21,7 +21,7 @@ Run `bundle` and then restart your Redmine.
 Usage
 --------------------------------------------------------------------------------
 
-Create a custome field to projects.
+Create a custom field to projects.
 
 ### Custom field configuration
 
