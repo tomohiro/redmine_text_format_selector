@@ -1,7 +1,7 @@
 Redmine Text Format Selector
 ================================================================================
 
-[GitHub Tag](https://img.shields.io/github/tag/Tomohiro/redmine_text_format_selector.svg)
+![GitHub Tag](https://img.shields.io/github/tag/Tomohiro/redmine_text_format_selector.svg)
 
 This is a redmin plugin that adds text format selector to a specified project.
 
