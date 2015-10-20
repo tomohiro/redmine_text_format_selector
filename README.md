@@ -29,8 +29,7 @@ Item            | Value
 --------------- | --------------------------------------------------------------
 Format          | List
 Name            | Text Format
-Possible Values | textile
-                | markdown
+Possible Values | textile<br>markdown
 
 
 LICENSE
