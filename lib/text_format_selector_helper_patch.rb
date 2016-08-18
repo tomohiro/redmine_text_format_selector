@@ -5,6 +5,7 @@ module TextFormatSelectorHelperPatch
     base.class_eval do
       alias_method_chain :wiki_helper,  :text_format_select
       alias_method_chain :textilizable, :text_format_select
+      alias_method :project_formatter, :project_formatter
     end
   end
 
