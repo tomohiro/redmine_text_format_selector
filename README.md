@@ -1,7 +1,7 @@
 Redmine Text Format Selector
 ================================================================================
 
-![GitHub Tag](https://img.shields.io/github/tag/Tomohiro/redmine_text_format_selector.svg)
+![GitHub Tag](https://img.shields.io/github/tag/Tomohiro/redmine_text_format_selector.svg?style=flat-square)
 
 This is a redmine plugin that adds text format selector to a specified project.
 
@@ -35,6 +35,6 @@ Possible Values | textile<br>markdown
 LICENSE
 --------------------------------------------------------------------------------
 
-&copy; 2014 - 2015 Tomohiro TAIRA.
+&copy; 2014 - 2016 Tomohiro TAIRA.
 
 This project is licensed under the [GNU General Public License v2](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
